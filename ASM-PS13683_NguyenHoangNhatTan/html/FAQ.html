@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>OT | About</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/styleInput.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route.js"></script>
+    <script src="../js/angular-animate.js"></script>
+
+    <style>
+        body {
+            background-image: url(../img/H1tz.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="fixed-sn white-skin">
+    <header>
+        <div id="slide-out" class="side-nav fixed" style="background-image: url(../img/bg11.png);">
+            <ul class="custom-scrollbar">
+                <li class="logo-sn waves-effect py-3">
+                    <div class="text-center">
+                        <a href="./index.html" class="pl-0"><img src="../img/logo2.png"></a>
+                    </div>
+                </li>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a href="./index.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-home"></i>Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="./about.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-credit-card"></i>Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-phone-square-alt"></i>Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="./feedback.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-comments"></i>Góp ý</a>
+                        </li>
+                        <li>
+                            <a href="./FAQ.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-question-circle"></i>Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="" class="collapsible-header waves-effect arrow-r"><i class="w-fa fas fa-list"></i>Danh mục<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a class="waves-effect">
+                                            <img src="../img/logos/ADAV.jpg" class="img-fluid rounded-circle hoverable" style="height: 20px;" alt="">
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sidenav-bg mask-light"></div>
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="breadcrumb-dn mr-auto">
+                <p><strong>Online Training</strong></p>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect" href="" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Tài khoản</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="userDropdown">
+                    <div>
+                        <a class="dropdown-item" href="./register.html">Đăng kí</a>
+                        <a class="dropdown-item" href="./login.html">Đăng nhập</a>
+                        <a class="dropdown-item" href="./forgotPassword.html">Quên mật khẩu</a>
+                    </div>
+                    <div ng-hide="student==null">
+                        <a class="dropdown-item" href="./forgotPassword.html">Thông tin cá nhân</a>
+                        <a class="dropdown-item" href="./changePassword.html">Đổi mật khẩu</a>
+                        <a class="dropdown-item" href="">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main style="min-height: 500px;">
+        <section class=" rgba-white-strong rounded shadow p-3">
+
+            <h6 class="font-weight-normal text-uppercase font-small grey-text mb-4 text-center">FAQ</h6>
+            <h3 class="font-weight-bold black-text mb-4 pb-2 text-center">CÂU HỎI THƯỜNG GẶP</h3>
+            <hr class="w-header">
+            <p class="lead text-muted mx-auto mt-4 pt-2 mb-5 text-center">Đây là những câu hỏi thường gặp. Nếu bạn có câu hỏi khác hãy liên hệ TT hỗ trợ</p>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-10 mx-auto mb-5">
+
+                    <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+                        <div class="card border-top border-bottom-0 border-left border-right border-light">
+
+                            <div class="card-header border-bottom border-light" role="tab" id="headingOne1">
+                                <a data-toggle="collapse" data-parent="#accordionEx" href="" aria-expanded="true" aria-controls="collapseOne1">
+                                    <h5 class="black-text font-weight-normal mb-0">
+                                        Học trực tuyến là gì? <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Có rất nhiều cách hiểu khác nhau về định nghĩa đào tạo online, nhưng cách hiểu cơ bản đó là một phương thức phân phối các tài liệu, nội dung học tập dựa trên các công cụ điện tử hiện đại như: điện thoại, máy tính thông qua mạng internet. Trong đó, nội
+                                    dung tài liệu học tập có thể được cập nhật từ các website trường học trực tuyến và các ứng dụng di động khác. Đặc điểm vượt trội của đào tạo qua mạng đó chính là tính tương tác cao và đa dạng giữa giảng viên và người
+                                    học. Theo tính năng đó, giảng viên và người học có thể trao đổi trực tiếp với nhau thông qua các ứng dụng: chat, email, diễn đàn, hội thảo trực tuyến,…
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card border-bottom-0 border-left border-right border-light">
+
+                            <div class="card-header border-bottom border-light" role="tab" id="headingTwo2">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="" aria-expanded="false" aria-controls="collapseTwo2">
+                                    <h5 class="black-text font-weight-normal mb-0">
+                                        Học trực tuyến: Nên hay không? <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapseTwo2" class="collapse show" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Thực tế đã nói lên một điều rằng, cho dù công nghê thông tin phát triển, các trang thiết kế web học trực tuyến trở nên phổ biến thì các trường Đại học cũng không thể bị xóa bỏ. Xã hội vẫn cần các phương thức giáo dục truyền thống để giúp các bạn trẻ trưởng
+                                    thành hơn. Tuy nhiên, xã hội cũng luôn cần các tổ chức thiết kế web dạy trực tuyến hay thiết kế phần mềm dạy học online với những khám phá và nội dung truyền đạt hiệu quả hơn. Các phương tiện trực tuyến như: mạng xã
+                                    hội, các ứng dụng online ngày càng phát triển chính vì thế, học qua mạng cũng đang là một hiệu quả của thế giới thông tin điện tử toàn cầu. Những trang web học online ra đời giúp cho học viên có thêm sự tìm kiếm thông
+                                    tin, tài liệu hữu ích.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card border-bottom-0 border-left border-right border-light">
+
+                            <div class="card-header border-bottom border-light" role="tab" id="headingThree3">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="" aria-expanded="false" aria-controls="collapseThree3">
+                                    <h5 class="black-text font-weight-normal mb-0">
+                                        Quiz là gì? <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapseThree3" class="collapse show" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Bài Quiz là một dạng bài trắc nghiệm đánh giá, bạn có thể áp dụng để tạo những bài trắc nghiệm tính cách, bài kiểm tra tự đánh giá bản thân hay bài ôn tập cho học viên. Sau khi làm xong các câu hỏi sẽ nhận được ngay lời nhận xét theo từng thang điểm mà
+                                    người làm đánh giá đạt được.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card border-left border-right border-light">
+
+                            <div class="card-header border-bottom border-light" role="tab" id="headingThree4">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="" aria-expanded="false" aria-controls="collapseThree4">
+                                    <h5 class="black-text font-weight-normal mb-0">
+                                        Phải đạt bao nhiêu điểm trong 1 bài kiểm tra? <i class="fas fa-angle-down rotate-icon"></i>
+                                    </h5>
+                                </a>
+                            </div>
+
+                            <div id="collapseThree4" class="collapse show" role="tabpanel" aria-labelledby="headingThree4" data-parent="#accordionEx">
+                                <div class="card-body">
+                                    Khi số câu trả lời của của bạn đúng hơn 50% tổng số câu hỏi.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer ng-show="loading" class="page-footer text-center text-md-left unique-color-dark pt-0 mt-5" style="transition: all linear 1s;">
+
+        <div class="top-pink-footer">
+            <div class="container">
+
+                <div class="row py-4 d-flex align-items-center">
+
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-md-0">
+                        <h6 class="mb-4 mb-md-0 white-text">Hãy liên hệ với tôi qua mạng xã hội!</h6>
+                    </div>
+
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <a class="p-2 m-2 fa-lg fb-ic ml-0" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg ins-ic">
+                            <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <div class="container-fluid">
+                <h3 class="">Made with <i class="fas fa-heart red-text mx-1"></i> by Nhat Tan (PS13683)</h3>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <script>
+        $(".button-collapse").sideNav();
+
+        var container = document.querySelector('.custom-scrollbar');
+        var ps = new PerfectScrollbar(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+        // Animation init
+        new WOW().init();
+    </script>
+</body>
+
+</html>

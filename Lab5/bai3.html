@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jan Auth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="vendor/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap&subset=vietnamese" rel="stylesheet">
+
+    <!-- <script type="text/javascript" src="jqueryupload/js/vendor/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="jqueryupload/js/jquery.fileupload.js"></script> -->
+    <script type="text/javascript" src="vendor/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="vendor/imagesloaded.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="./vendor/bootstrap.css">
+    <link rel="stylesheet" href="./vendor/font-awesome.css">
+    <link rel="stylesheet" href="./css/1.css">
+    <script src="../angular.min.js"></script>
+    <script src="./js/ProductController.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div class="topheader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="mangxh float-sm-left text-xs-center text-sm-left">
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-pinterest"></i></a>
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <div class="lienhe">
+                        Call for shop: 0981689527
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="lienhe openingtop float-sm-right text-sm-left text-xs-center">
+                        Opening Hours : 9:00am - 10:00pm
+                    </div>
+                </div>
+
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end topheader -->
+
+
+
+    <!-- article -->
+
+    <div class="slideInUp">
+        <div class="container">
+            <div class="row">
+                <div class="tieudetintuc col-sm-12 text-xs-center">
+                    <div class="fontdancing tieude1">Danh mục sản phẩm</div>
+                    <div class="fontroboto tieude2">Lasted News Update</div>
+                </div>
+                <div class="batintuc">
+                    <div class="container" ng-controller="productController">
+                        <div class="row">
+                            <div class="col-sm-4 mottintuc" ng-repeat="p in products">
+                                <img src="./images/{{p.image}}" alt="">
+                                <span class="vang">{{p.price}} USD</span>
+                                <p class="fontroboto">UNION LA x Air Jordan 4 – Giải mã hai phối màu “Guava Ice” và “Off Noir” có giá resell 20 triệu VNĐ</p>
+                                <div class="abc">
+                                    <a href="" class="readmore">Read More</a>
+                                    <a href="" class="like">5 Likes</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end tintuchome -->
+    <div class="footertop wow slideInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 cot1">
+
+                    <div class="motdong">
+                        <i class="fa fa-paper-plane-o"></i>
+                        <span class="textmotdong">Address: 66 Nguyễn Đỗ Cung, Phường Tây Thạnh, Quận Tân Phú, TPHCM</span>
+                    </div>
+                    <div class="motdong">
+                        <i class="fa fa-phone"></i>
+                        <span class="textmotdong">Phone: 0981689527</span>
+                    </div>
+                    <div class="motdong">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="textmotdong">Email: duongsy1920@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 cot3">
+                    <h2 class="tdfooter">HỖ TRỢ THANH TOÁN</h2>
+                    <ul>
+                        <li>
+                            <p><i class="fa fa-cc-mastercard mr-2"></i>MasterCard</p>
+                        </li>
+                        <li>
+                            <p><i class="fa fa-cc-visa mr-2"></i>Visa</p>
+                        </li>
+                        <li>
+                            <p><i class="fa fa-credit-card mr-2"></i>Thẻ tín dụng</p>
+                        </li>
+                        <li>
+                            <p><i class="fa fa-money mr-2"></i>Tiền mặt</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 cot4">
+                    <h2 class="tdfooter">Opening Hours</h2>
+                    <div class="opening1">
+                        <div class="phai float-xs-right">9:00am - 23:00pm</div>
+                        <div class="trai">Mon - Fri</div>
+                    </div>
+                    <div class="opening1">
+                        <div class="phai float-xs-right">10:00am - 22:00pm</div>
+                        <div class="trai">Saturday</div>
+                    </div>
+                    <div class="opening1">
+                        <div class="phai float-xs-right">10:00am - 21:00pm</div>
+                        <div class="trai">Sunday</div>
+                    </div>
+                    <!-- <p>Note: JanAuth is closed on holidays.</p> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end footertop -->
+    <div class="footerbottom wow slideInUp">
+        Copyright © 2020. All Rights Reserved
+    </div>
+    <!-- end footerbottom -->
+</body>
+
+</html>

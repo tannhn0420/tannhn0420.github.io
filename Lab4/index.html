@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="../angular.min.js"></script>
+    <title>Lab04</title>
+
+    <style>
+        header {
+            background-color: bisque;
+        }
+        
+        .shopping-mall {
+            bottom: 20px;
+            left: 10px;
+            font-variant: small-caps;
+        }
+        
+        .shopping-mall>h1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 50px;
+            color: white;
+            letter-spacing: 0.3px;
+            text-shadow: 2px 2px 2px black;
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin: 0;
+        }
+        
+        .shopping-mall>h5 {
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+        }
+        
+        nav {
+            margin-right: -12px;
+            margin-left: -12px;
+        }
+        
+        nav .row {
+            height: 60px;
+            background-color: yellow;
+        }
+        
+        footer {
+            height: 50px;
+            background-color: rgba(216, 236, 101, 0.705);
+            margin: 0 -12px;
+        }
+        
+        .row>article {
+            min-height: 300px;
+            background-color: rgb(238, 213, 213);
+        }
+        
+        .row>aside {
+            min-height: 300px;
+            background-color: rgb(221, 235, 190);
+        }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <div class="container" ng-controller="myCtrl">
+        <header class="row pt-5 pb-2">
+            <div class="col-9 shopping-mall">
+                <h1>Online Shopping Mall</h1>
+                <h5>The center point of the professional programming</h5>
+            </div>
+            <div class="col-3 text-right">
+                <img src="./images/header-object.png" width="100%" alt="" class="ml-auto">
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Góp ý</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hỏi đáp</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tài khoản
+                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <hr class="dropdown-divider">
+
+                                <li><a class="dropdown-item" ng-click="logout()" href="#">Đăng xuất</a></li>
+                                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
+                                <li><a class="dropdown-item" href="#">Hàng đã mua</a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <article class="col-sm-9">
+                <div class="row p-2">
+
+
+                    <div class="col-4 mt-2">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/1.png" class="card-img-top  w-75 h-75 mt-2" alt="...">
+                            <div class="card-body text-center">
+                                <h4 class="card-title ">Samsung Galaxy Tab A1</h4>
+                                <p class="card-footer font-weight-bold  bg-warning fw-bold">6.990.000 VNĐ</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-2">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/2.png" class="card-img-top w-75 h-75 mt-2" alt="...">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Máy tính bảng Mobell Tab 10</h4>
+                                <p class="card-footer font-weight-bold  bg-warning fw-bold">750.000 VNĐ</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-2">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/3.png" class="card-img-top w-75 h-75 mt-2" alt="...">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Điện thoại iPhone 8 Plus 64GB</h4>
+                                <p class="card-footer font-weight-bold  bg-warning fw-bold">15.990.000 VNĐ</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </article>
+
+            <aside class="col-sm-3 ">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Giỏ hàng
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <img src="./images/shoppingcart.gif" alt="None" class="col-sm-6">
+                            <ul class="list-group list-group-flush col-sm-6">
+                                <li class="list-group-item">10 items</li>
+                                <li class="list-group-item">200$</li>
+
+                                <li class="list-group-item"><a href="#">View Cart</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Tìm kiếm
+                    </div>
+                    <div class="card-body">
+                        <div class="form-inline">
+                            <input type="text" class="form-control" name="search" id="search" aria-describedby="searchHelpId" placeholder="Search">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        Chủng loại
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                Smartphone
+                            </a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="bg-dark">
+            <div class="text-center text-white">
+
+                <p class="m-auto ">Họ tên:<b style="color: blue;"> {{fullname}}</b>
+                </p>
+
+                <p class="m-auto "> Email: <b style="color: blue;"> {{email}}</b>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", myfunc);
+
+        function myfunc($scope) {
+            var fullname = sessionStorage.getItem("fullname");
+            var email = sessionStorage.getItem("email");
+            if (fullname != "" && email != "") {
+                $scope.fullname = fullname;
+                $scope.email = email;
+            }
+            $scope.logout = function() {
+                sessionStorage.removeItem("fullname");
+                sessionStorage.removeItem("email");
+                document.location = "bai4.html";
+            }
+        }
+    </script>
+</body>
+
+</html>

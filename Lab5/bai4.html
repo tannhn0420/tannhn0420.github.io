@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jan Auth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="vendor/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap&subset=vietnamese" rel="stylesheet">
+
+    <!-- <script type="text/javascript" src="jqueryupload/js/vendor/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="jqueryupload/js/jquery.fileupload.js"></script> -->
+    <script type="text/javascript" src="vendor/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="vendor/imagesloaded.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="./vendor/bootstrap.css">
+    <link rel="stylesheet" href="./vendor/font-awesome.css">
+
+    <link rel="stylesheet" href="./css/1.css">
+    <script src="/Angularjs/angular.min.js"></script>
+    <script src="./js/theloai.js"></script>
+    <script src="./js/songdep.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div class="container" ng-controller="myController">
+        <div class="topheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mangxh float-sm-left text-xs-center text-sm-left">
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-pinterest"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                        </div>
+                        <div class="lienhe">
+                            Call for shop: 0981689527
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="lienhe openingtop float-sm-right text-sm-left text-xs-center">
+                            Opening Hours : 9:00am - 10:00pm
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end topheader -->
+        <div class="logovamenu">
+            <nav class="navbar navbar-light bg-faded fontroboto">
+                <div class="container">
+                    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#mtren">
+
+	          </button>
+                    <div class="collapse navbar-toggleable-xs" id="mtren">
+                        <a class="navbar-brand text-xs-center text-sm-left" href="#"><img src="./images/JA.png" alt="" class="logo"></a>
+
+                        <ul class="nav navbar-nav float-sm-right">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Trang chủ</a>
+                            </li>
+
+
+                            <li class="nav-item" ng-repeat="tl in listTheLoai | filter:{lang :'vi',AnHien:1}">
+                                <a href="" class="nav-link">{{tl.TenTL}}</a>
+                            </li>
+
+                            <li class="nav-item cart">
+                                <a href="#" class="nav-link"><i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- end container -->
+            </nav>
+        </div>
+
+
+        <!-- article -->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 p-0 ">
+                    <div class="card-header bg-danger font-weight-bold text-white">TIN THỂ THAO</div>
+                    <div class="mt-1" ng-repeat="row in listTin | orderBy: '-Xem' | limitTo:3:start">
+                        <tr>
+                            <td>
+                                <p><b>{{row.TieuDe}}</b><em>(Xem: {{row.Xem}})</em>
+                                    <span>Ngày đăng: <em>{{row.Ngay}}</em></span></p>
+                                <div class="">{{row.TomTat}}</div>
+                            </td>
+                        </tr>
+
+                        <hr/>
+                    </div>
+                    <tr>
+                        <td><button ng-click="next()"> > </button></td>
+                    </tr>
+                </div>
+
+                <!-- Aside -->
+                <div class="col-sm">
+                    <div class="card-header bg-danger font-weight-bold text-white">LIÊN QUAN</div>
+                    <div class=" motsp nike mt-1">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-5">
+                                <div class="anhsp">
+                                    <div class="tagnew">NEW</div>
+                                    <img src="./images/image-1.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-7">
+                                <div class="tensp">
+                                    <div class="tren">
+                                        <p class="ten">Nike Air Jordan 3 Retro</p>
+                                    </div>
+                                    <div class="duoi">Men's Shoe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="motsp nike">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-5">
+                                <div class="anhsp">
+                                    <div class="tagnew">NEW</div>
+                                    <img src="images/news_2.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-7">
+                                <div class="tensp">
+                                    <div class="tren">
+                                        <p class="ten">Nike Air Jordan 3 Retro</p>
+                                    </div>
+                                    <div class="duoi">Men's Shoe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" adidas">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-5">
+                                <div class="anhsp">
+                                    <div class="tagnew">NEW</div>
+                                    <img src="images/news_1.jpg" alt="" class="img-fluid">
+                                </div>
+
+                            </div>
+                            <div class="col-xs-6 col-sm-7">
+                                <div class="tensp">
+                                    <div class="tren">
+                                        <p class="ten">Nike Air Jordan 3 Retro</p>
+                                    </div>
+                                    <div class="duoi">Men's Shoe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- end tintuchome -->
+
+        <div class="card-footer bg-danger">
+            <div class="row">
+                <div class="col-sm-6 cot3">
+                    <h2 class="tdfooter text-gray-dark font-weight-bold">Họ tên: Nguyễn Hoàng Nhật Tân</h2>
+
+                </div>
+                <div class="col-sm-6 cot3">
+                    <h2 class="tdfooter text-gray-dark font-weight-bold">Email: Tannhnps13683@fpt.edu.vn</h2>
+                </div>
+            </div>
+
+        </div>
+        <!-- end footertop -->
+
+        <!-- end footerbottom -->
+    </div>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myController", myfunc);
+
+        function myfunc($scope) {
+            $scope.start = 0;
+            $scope.listTheLoai = theloai;
+            $scope.listTin = list;
+
+            $scope.next = function() {
+                $scope.start += 3;
+            }
+        };
+    </script>
+</body>
+
+</html>

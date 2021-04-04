@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="../angular.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body ng-app="myApp">
+
+    <div class="container bg-light col-5">
+        <div class="" ng-controller="myCtrl">
+            <div class=" p-4 ">
+                <form action="">
+                    <div class="form-group ">
+                        <label for="">Chiều dài</label>
+                        <input type="number" ng-model="length" class="form-control bg-info text-light">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Chiều rộng</label>
+                        <input type="number" ng-model="width" class="form-control bg-info text-light">
+                    </div>
+                    <div class="form-group ">
+                        <label for="">Diện tích</label>
+                        <div class="form-control bg-danger text-white" ng-bind="acreage"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Chu vi</label>
+                        <div class="form-control bg-success text-light" ng-bind="perimeter"></div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary mr-3" type="button" ng-click="equal()">Tính toán</button>
+                        <button class="btn btn-warning" type="button" ng-click="random()">Cho số ngẫu nhiên</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope) {
+            $scope.equal = function() {
+                var a = parseInt($scope.width);
+                var b = parseInt($scope.length);
+                $scope.acreage = a * b;
+                $scope.perimeter = (a + b) * 2;
+            }
+            $scope.random = function() {
+                var nRandom1 = Math.round(Math.random() * 100);
+                var nRandom2 = Math.round(Math.random() * 100);
+                $scope.width = nRandom1;
+                $scope.length = nRandom2;
+            }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

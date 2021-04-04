@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css" />
+    <style>
+        header {
+            background-color: rgb(241, 240, 240);
+        }
+        
+        .shopping-mall {
+            bottom: 20px;
+            left: 10px;
+            font-variant: small-caps;
+            text-shadow: rgb(219, 204, 204);
+        }
+        
+        .shopping-mall>h1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 50px;
+            color: rgb(231, 61, 61);
+            letter-spacing: 0.3px;
+            text-shadow: 2px 2px 2px black;
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin: 0;
+        }
+        
+        .shopping-mall>h5 {
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+            color: rgb(8, 17, 24);
+        }
+        
+        nav {
+            margin-right: -15px;
+            margin-left: -15px;
+            background-color: rgb(236, 158, 158);
+        }
+        
+        nav .row {
+            height: 60px;
+            background-color: yellow;
+        }
+        
+        footer {
+            height: 50px;
+            background-color: rgb(249, 253, 251);
+            margin: 0 -12px;
+        }
+        
+        .row>article {
+            min-height: 300px;
+            background-color: rgb(241, 181, 181);
+        }
+        
+        .row>aside {
+            min-height: 300px;
+            background-color: rgb(241, 188, 171);
+        }
+        
+        .jumbotron {
+            padding: 2rem 1rem;
+            background: #cee2e0 linear-gradient(to right, hsl(0, 6%, 90%), #e4aca2)
+        }
+        
+        li {
+            outline: none;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row pt-5 pb-2">
+            <div class="col-9 shopping-mall">
+                <h1>Online Shopping Mall</h1>
+                <h5>The center point of the professional programming</h5>
+            </div>
+            <div class="col-3 text-right">
+                <img src="./images/header-object.png" width="100%" alt="" class="ml-auto">
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i>Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-atlas"></i> Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-comment"></i> Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-envelope "></i> Góp ý</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-fax    "></i> Hỏi đáp</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i> Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#"></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+                                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
+                                <li><a class="dropdown-item" href="#">Hàng đã mua</a></li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <article class="col-sm-9">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Đăng nhập</h5>
+                        <form class="form-signin">
+                            <div classs="form-label-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Nhập vào địa chỉ email" required autofocus>
+                                <label for="inputEmail">Địa chỉ email</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Nhập vào mật khẩu" required>
+                                <label for="inputPassword">Mật khẩu</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Nhớ mật khẩu</label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Đăng nhập</button>
+                            <hr class="my-4">
+                            <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Đăng nhập bằng tài khoản Google</button>
+                            <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Đăng nhập bằNg tài khoản Facebook</button>
+                        </form>
+                    </div>
+                </div>
+
+            </article>
+
+            <aside class="col-sm-3 ">
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <i class="fas fa-cart-arrow-down"></i> Giỏ hàng
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <img src="./images/shoppingcart.gif" alt="None" class="col-sm-6">
+                            <ul class="list-group list-group-flush col-sm-6">
+                                <li class="list-group-item p-0">10 items</li>
+                                <li class="list-group-item p-0">200$</li>
+
+                                <li class="list-group-item"><a href="#">View Cart</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <i class="fas fa-search"></i> Tìm kiếm
+                    </div>
+                    <div class="card-body">
+                        <div class="form-inline">
+                            <input type="text" class="form-control" name="search" id="search" aria-describedby="searchHelpId" placeholder="Search">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card mt-3" data-bs-toggle="collapse">
+                    <div class="card-header">
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="fas fa-list"></i> LAB01
+                                  </button>
+                                    </h2>
+
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <ul class="list-group list-group-flush card-collapse">
+
+
+                                        <a href="./Lab01/index.html" target="tg" class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li>Lab01</li>
+                                        </a>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFif">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFif" aria-expanded="true" aria-controls="collapseFif">
+                                            <i class="fas fa-list"></i> LAB02
+                                  </button>
+                                    </h2>
+
+                                </div>
+
+                                <div id="collapseFif" class="collapse show" aria-labelledby="headingFif" data-parent="#accordionExample">
+                                    <ul class="list-group list-group-flush card-collapse">
+
+                                        <a href="./Lab02/bai1.html" target="_blank" class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li>Bài 1</li>
+                                        </a>
+                                        <a href="./Lab02/bai2.html" target="_blank" class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li>Bài 2</li>
+                                        </a>
+                                        <a href="./Lab02/bai3.html" target="_blank" class="list-group-item list-group-item-action list-group-item-secondary">
+                                            <li>Bài 3</li>
+                                        </a>
+                                        <a href="./Lab02/bai4.html" target="_blank" class="list-group-item list-group-item-action list-group-item-success">
+                                            <li>Bài 4</li>
+                                        </a>
+                                        <a href="./Lab02/bai5.html" target="_blank" class="list-group-item list-group-item-action list-group-item-success">
+                                            <li>Bài 5</li>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                            <i class="fas fa-list"></i> LAB03
+                                  </button>
+                                    </h2>
+
+                                </div>
+
+                                <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                    <ul class="list-group list-group-flush card-collapse">
+
+                                        <a href="./bai1_2.html" class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li>Bài 1</li>
+                                        </a>
+                                        <a href="./bai4_dangnhap.html" class="list-group-item list-group-item-action list-group-item-primary">
+                                            <li>Bài 2</li>
+                                        </a>
+                                        <a href="./bai4_danhsach.html" class="list-group-item list-group-item-action list-group-item-secondary">
+                                            <li>Bài 3</li>
+                                        </a>
+                                        <a href="./bai4_gallery.html" class="list-group-item list-group-item-action list-group-item-success">
+                                            <li>Bài 4</li>
+                                        </a>
+                                        <a href="./bai4_banggia.html" class="list-group-item list-group-item-action list-group-item-success">
+                                            <li>Bài 5</li>
+                                        </a>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas fa-atom"></i> NHÀ SẢN XUẤT
+                                  </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <ul class="list-group list-group-flush card-collapse">
+                                        <li><a href="#" class="list-group-item list-group-item-action">
+                                            Smartphone
+                                        </a></li>
+
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-primary">SamSung</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Apple</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-success">Sony</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-danger">LG</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-warning">Lenovo</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-star"></i> HÀNG ĐẶC BIỆT
+                                  </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <ul class="list-group list-group-flush card-collapse">
+                                        <li><a href="#" class="list-group-item list-group-item-action">
+                                            Smartphone
+                                        </a></li>
+
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-primary">Điện thoại cũ giá rẻ</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Khuyến mãi cực sốc</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-success">Quà tặNg tiền mặt</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-danger">Ưu đãi sinh viên</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            <i class="fas fa-list"></i> CHỦNG LOẠI
+                                  </button>
+                                    </h2>
+
+                                </div>
+
+                                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                    <ul class="list-group list-group-flush card-collapse">
+                                        <li><a href="#" class="list-group-item list-group-item-action">
+                                            Smartphone
+                                        </a></li>
+
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-primary">Điện thoại di động</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Máy tính xách tay</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-success">Máy tính để bàn</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-danger">Tủ lạnh</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-warning">Máy quạt</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-info">Điều hoà panasonic</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-light">Quạt máy</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-dark">Túi xách ba lô</a></li>
+                                        <li><a href="#" class="list-group-item list-group-item-action list-group-item-dark">May hut bui </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p class="m-auto text-center text-">FPT Polytechnic &copy; 2021. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

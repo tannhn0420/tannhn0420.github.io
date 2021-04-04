@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../angular.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+
+<body ng-app="myApp">
+    <div class="container">
+
+        <div class="card" ng-controller="myCtrl">
+            <div class="card-header text-center bg-info text-white">
+                <h4>{{titleApp}}</h4>
+            </div>
+            <div class="card-body col-12">
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="">
+                            <!-- code hien view , cac bieu thuc/gia tri trong $scope -->
+
+                            <p> <i class="fas fa-address-card"> </i> Tên đăng nhập: {{sv.username}}</p>
+                            <p><i class="fas fa-address-card"> </i> Họ và tên: {{sv.fullname}}</p>
+                            <p><i class="fas fa-mail-bulk "></i> Email: {{sv.email}}</p>
+                            <p><i class="fas fa-male"></i> Giới tính: {{sv.gender}}</p>
+                            <p><i class="fas fa-birthday-cake    "></i> Ngày sinh: {{sv.birthday}}</p>
+                            <p><i class="fas fa-money-bill    "></i> Học phí: {{sv.schoolFee}}</p>
+                            <p><i class="fas fa-marker    "></i> Điểm: {{sv.marks}}</p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <img class="img-fluid" src="https://th.bing.com/th/id/OIP.Ev5FM4WYIABHDdATf385GgHaHa?pid=ImgDet&w=221&h=221&c=7&dpr=1.25" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="card-footer text-center m-0 p-">
+                Giới tính: true là nam , false là nữ
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", myFunc);
+
+        function myFunc($scope) {
+            // code tinh toan va gan gia tri bien trong angularJS
+            $scope.titleApp = "Student Information"
+            $scope.sv = {
+                username: "TanNHN",
+                password: "Nhattan123",
+                fullname: "Nguyễn Hoàng Nhật Tân",
+                email: "tannhnps13683@gmail.com",
+                gender: true,
+                birthday: "2001-04-20",
+                schoolFee: "4500000",
+                marks: "10"
+            }
+        }
+    </script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>OT | layout</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/styleInput.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route.js"></script>
+    <script src="../js/angular-animate.js"></script>
+
+    <style>
+        body {
+            background-image: url(../img/H1tz.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="fixed-sn white-skin">
+    <header>
+        <div id="slide-out" class="side-nav fixed" style="background-image: url(../img/bg11.png);">
+            <ul class="custom-scrollbar">
+                <li class="logo-sn waves-effect py-3">
+                    <div class="text-center">
+                        <a href="#!index" class="pl-0"><img src="../img/logo2.png"></a>
+                    </div>
+                </li>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a href="#!index" class="collapsible-header waves-effect"><i class="w-fa fas fa-home"></i>Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="./about.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-credit-card"></i>Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-phone-square-alt"></i>Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="./feedback.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-comments"></i>Góp ý</a>
+                        </li>
+                        <li>
+                            <a href="./FAQ.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-question-circle"></i>Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="" class="collapsible-header waves-effect arrow-r"><i class="w-fa fas fa-list"></i>Danh mục<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a class="waves-effect">
+                                            <img src="../img/logos/ADAV.jpg" class="img-fluid rounded-circle hoverable" style="height: 20px;" alt="">
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sidenav-bg mask-light"></div>
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="breadcrumb-dn mr-auto">
+                <p><strong>Online Training</strong></p>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect" href="" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Tài khoản</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="userDropdown">
+                    <div>
+                        <a class="dropdown-item" href="./register.html">Đăng kí</a>
+                        <a class="dropdown-item" href="./login.html">Đăng nhập</a>
+                        <a class="dropdown-item" href="./forgotPassword.html">Quên mật khẩu</a>
+                    </div>
+                    <div ng-hide="student==null">
+                        <a class="dropdown-item" href="./updateAccount.html">Thông tin cá nhân</a>
+                        <a class="dropdown-item" href="./changePassword.html">Đổi mật khẩu</a>
+                        <a class="dropdown-item" href="">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main style="min-height: 500px;">
+        <div class="my-slide-container">
+            <section class="rounded-lg mb-4" style="background-image: url(../img/H4tz.gif); background-repeat: no-repeat;background-position: center; background-size: cover;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="row">
+
+                        <div class="col-md-12 col-lg-4 offset-lg-1 text-center text-lg-left white-text mt-5 mt-md-0">
+                            <h1 class="intro-title font-weight-bold mt-sm-5 mt-0 mb-4 wow fadeInLeft" data-wow-delay="0.3s">Trang thi trắc nghiệm trực tuyến </h1>
+                            <h6 class="mb-4 wow fadeInLeft" data-wow-delay="0.3s">Để bắt đầu bài thi bạn vui lòng đăng nhập hoặc đăng kí.</h6>
+                            <a ng-click="intro=0" href="#!login" class="btn btn-white btn-rounded orange-text font-weight-bold ml-lg-0 wow fadeInLeft" data-wow-delay="0.4s">Đăng nhập</a>
+                            <a ng-click="intro=0" href="#!register" class="btn btn-outline-white btn-rounded font-weight-bold wow fadeInLeft" data-wow-delay="0.4s">Đăng kí</a>
+                        </div>
+
+                        <div class="col-md-12 col-lg-6 mt-4 mt-md-0 wow fadeInRight" data-wow-delay="0.3s">
+                            <img src="https://mdbootstrap.com/img/Others/cards32.png" class="img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="dark-grey-text text-center p-5 rgba-white-strong">
+
+                <h3 class="font-weight-bold mb-4 pb-2">Danh Mục Thi</h3>
+                <p class="text-muted w-responsive mx-auto mb-5">Chọn phần thi theo bộ muôn bạn đang học.</p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <div class="col-md-6 mb-4" style="min-height: 500px;">
+
+                        <div class="view overlay rounded z-depth-1 d-flex justify-content-center white" style="background-image: url(../img/H5tz.gif);background-position: center;
+                        background-repeat: repeat-x;background-size: 50%;">
+                            <img src="../img/logos/ADAV.jpg" class="img-fluid w-50" alt="Sample project image">
+                            <a href="./viewtest.html">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                            <a class="deep-purple-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-book-open pr-2"></i>Bài thi</h6>
+                            </a>
+                            <h4 class="font-weight-bold mb-3">Lập trình Android nâng cao</h4>
+                            <p class="text-muted">Bài thi gồm kiến thức đã học trong môn Lập trình Android nâng cao</p>
+                            <a href="./viewtest.html" class="btn btn-success btn-rounded btn-md"> Chi tiết</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 mb-4" style="min-height: 500px;">
+
+                        <div class="view overlay rounded z-depth-1 d-flex justify-content-center white" style="background-image: url(../img/H5tz.gif);background-position: center;
+                        background-repeat: repeat-x;background-size: 50%;">
+                            <img src="../img/logos/DBBS.png" class="img-fluid w-50" alt="Sample project image">
+                            <a>
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                            <a class="deep-purple-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-book-open pr-2"></i>Bài thi</h6>
+                            </a>
+                            <h4 class="font-weight-bold mb-3">Lập trình Android nâng cao</h4>
+                            <p class="text-muted">Bài thi gồm kiến thức đã học trong môn Lập trình Android nâng cao</p>
+                            <a href="./viewtest.html" class="btn btn-success btn-rounded btn-md"> Chi tiết</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Grid row -->
+                <div>
+                    <button ng-click="" class="btn btn-primary"><i class="fas fa-chevron-circle-left"></i></button>
+                    <button ng-click="" class="btn btn-primary"><i class="fas fa-chevron-circle-right"></i></button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer ng-show="loading" class="page-footer text-center text-md-left unique-color-dark pt-0 mt-5" style="transition: all linear 1s;">
+
+        <div class="top-pink-footer">
+            <div class="container">
+
+                <div class="row py-4 d-flex align-items-center">
+
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-md-0">
+                        <h6 class="mb-4 mb-md-0 white-text">Hãy liên hệ với tôi qua mạng xã hội!</h6>
+                    </div>
+
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <a class="p-2 m-2 fa-lg fb-ic ml-0" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg ins-ic">
+                            <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <div class="container-fluid">
+                <h3 class="">Made with <i class="fas fa-heart red-text mx-1"></i> by Nhat Tan (PS13683)</h3>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <script>
+        $(".button-collapse").sideNav();
+
+        var container = document.querySelector('.custom-scrollbar');
+        var ps = new PerfectScrollbar(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+        // Animation init
+        new WOW().init();
+    </script>
+</body>
+
+</html>

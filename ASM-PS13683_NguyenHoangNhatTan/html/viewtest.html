@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>OT | About</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/styleInput.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route.js"></script>
+    <script src="../js/angular-animate.js"></script>
+
+    <style>
+        body {
+            background-image: url(../img/H1tz.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body class="fixed-sn white-skin">
+    <header>
+        <div id="slide-out" class="side-nav fixed" style="background-image: url(../img/bg11.png);">
+            <ul class="custom-scrollbar">
+                <li class="logo-sn waves-effect py-3">
+                    <div class="text-center">
+                        <a href="./index.html" class="pl-0"><img src="../img/logo2.png"></a>
+                    </div>
+                </li>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a href="./index.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-home"></i>Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="./about.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-credit-card"></i>Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-phone-square-alt"></i>Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="./feedback.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-comments"></i>Góp ý</a>
+                        </li>
+                        <li>
+                            <a href="./FAQ.html" class="collapsible-header waves-effect"><i class="w-fa fas fa-question-circle"></i>Hỏi đáp</a>
+                        </li>
+                        <li>
+                            <a href="" class="collapsible-header waves-effect arrow-r"><i class="w-fa fas fa-list"></i>Danh mục<i class="fas fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li>
+                                        <a class="waves-effect">
+                                            <img src="../img/logos/ADAV.jpg" class="img-fluid rounded-circle hoverable" style="height: 20px;" alt="">
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sidenav-bg mask-light"></div>
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="breadcrumb-dn mr-auto">
+                <p><strong>Online Training</strong></p>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect" href="" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Tài khoản</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="userDropdown">
+                    <div>
+                        <a class="dropdown-item" href="./register.html">Đăng kí</a>
+                        <a class="dropdown-item" href="./login.html">Đăng nhập</a>
+                        <a class="dropdown-item" href="./forgotPassword.html">Quên mật khẩu</a>
+                    </div>
+                    <div ng-hide="student==null">
+                        <a class="dropdown-item" href="./updateAccount.html">Thông tin cá nhân</a>
+                        <a class="dropdown-item" href="./changePassword.html">Đổi mật khẩu</a>
+                        <a class="dropdown-item" href="">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main style="min-height: 500px;">
+        <section class="px-5 py-4 rgba-white-strong rounded shadow">
+
+            <h2 class="h1-responsive font-weight-bold text-center">Lập trình Android nâng cao</h2>
+            <p class="grey-text text-center w-responsive mx-auto mb-5"></p>
+
+            <div class="row">
+
+                <div class="col-lg-5 mb-lg-0 mb-5">
+                    <img src="../img/logos/ADAV.jpg" alt="Sample project image" class="img-fluid rounded z-depth-1" style="width: 300px;">
+                </div>
+
+                <div class="col-lg-7">
+
+                    <div class="row mb-3">
+                        <div class="col-md-1 col-2">
+                            <i class="fas fa-book fa-2x cyan-text"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5 class="font-weight-bold mb-3">Kiến thức</h5>
+                            <p class="grey-text">Thí sinh đảm bảo đã ôn đầy đủ kiến thức trong quá trình học tập</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-1 col-2">
+                            <i class="fas fa-code fa-2x red-text"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5 class="font-weight-bold mb-3">Kỹ năng</h5>
+                            <p class="grey-text">Áp dụng kiến thức vào thức tiển bằng cách trả lời ví dụ theo code mẫu</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1 col-2">
+                            <i class="far fa-money-bill-alt fa-2x deep-purple-text"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5 class="font-weight-bold mb-3">Phí học lại</h5>
+                            <p class="grey-text mb-0">Thí sinh sẽ phải đóng tiền học lại môn nếu thi không đủ điểm.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="my-5">
+
+            <div class="row">
+
+                <div class="col-lg-7">
+
+                    <div class="row mb-3">
+                        <div class="col-md-1 col-2">
+                            <i class="fas fa-american-sign-language-interpreting fa-2x indigo-text"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5 class="font-weight-bold mb-3">Công bằng</h5>
+                            <p class="grey-text">Thí sinh đảm báo trung thực trong quá trình thi bằng cách sử dụng kiến thức đã học được.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-1 col-2">
+                            <i class="fas fa-check-double fa-2x pink-text"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5 class="font-weight-bold mb-3">Thành tích</h5>
+                            <p class="grey-text">Thành tích trong bài thi sẽ được đánh giá, ghi nhận và khen thưởng.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-lg-0 mb-5">
+                        <div class="col-md-1 col-2">
+                            <i class="far fa-grin fa-2x blue-text"></i>
+                        </div>
+                        <div class="col-md-11 col-10">
+                            <h5 class="font-weight-bold mb-3">Mẹo</h5>
+                            <p class="grey-text mb-0">Thí sinh nên làm những câu dễ trước không để mất quá nhiều thời gian cho 1 câu khó.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 view overlay">
+                    <img src="../img/start.gif" alt="Sample project image" class="img-fluid rounded z-depth-1" style="width: 300px;">
+                    <a>
+                        <div class="mask waves-effect waves-light rgba-white-slight"></div>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer ng-show="loading" class="page-footer text-center text-md-left unique-color-dark pt-0 mt-5" style="transition: all linear 1s;">
+
+        <div class="top-pink-footer">
+            <div class="container">
+
+                <div class="row py-4 d-flex align-items-center">
+
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-md-0">
+                        <h6 class="mb-4 mb-md-0 white-text">Hãy liên hệ với tôi qua mạng xã hội!</h6>
+                    </div>
+
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <a class="p-2 m-2 fa-lg fb-ic ml-0" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg tw-ic">
+                            <i class="fab fa-twitter white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-lg-4"> </i>
+                        </a>
+                        <a class="p-2 m-2 fa-lg ins-ic">
+                            <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <div class="container-fluid">
+                <h3 class="">Made with <i class="fas fa-heart red-text mx-1"></i> by Nhat Tan (PS13683)</h3>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <script>
+        $(".button-collapse").sideNav();
+
+        var container = document.querySelector('.custom-scrollbar');
+        var ps = new PerfectScrollbar(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+        // Animation init
+        new WOW().init();
+    </script>
+</body>
+
+</html>
